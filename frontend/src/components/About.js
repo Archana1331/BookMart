@@ -8,16 +8,16 @@ const About = () => {
       <Header />
       <div className="about-page">
         <div className="about-content">
-          <h1 className="neon-title">About BookBazaar</h1>
+          <h1 className="neon-title">About BookMart</h1>
 
           <p className="about-text">
-            At <strong>BookBazaar</strong>, we believe that books are more than just pages —
+            At <strong>BookMart</strong>, we believe that books are more than just pages —
             they are portals to imagination, knowledge, and personal growth. Our mission is to
             create a cozy, vibrant space where readers of all genres can find something that speaks to them.
           </p>
 
           <p className="about-text">
-            Whether you're a fan of thrilling fiction, inspiring biographies, or deep academic reads, BookBazaar
+            Whether you're a fan of thrilling fiction, inspiring biographies, or deep academic reads, BookMart
             is your go-to destination. We are committed to fostering a love of reading and building a
             community around it.
           </p>
@@ -30,7 +30,7 @@ const About = () => {
           <div className="about-vision">
             <h2 className="vision-heading">Our Vision</h2>
             <p className="about-text">
-              We envision a world where literature is accessible, inclusive, and cherished by all. BookBazaar aims
+              We envision a world where literature is accessible, inclusive, and cherished by all. BookMart aims
               to bridge the gap between classic wisdom and contemporary curiosity, making reading a lifelong habit
               through technology, community, and creativity.
             </p>
