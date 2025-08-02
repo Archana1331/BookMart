@@ -27,7 +27,7 @@ const Checkout = () => {
       if (!user?.token) throw new Error('User not logged in');
 
       await axios.post(
-        'https://bookbazaar-3ben.onrender.com/api/cart/checkout',
+        'https://bookmart-d7it.onrender.com/api/cart/checkout',
         {},
         { headers: { Authorization: `Bearer ${user.token}` } }
       );

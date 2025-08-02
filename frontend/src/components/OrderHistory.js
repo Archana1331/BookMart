@@ -12,7 +12,7 @@ const OrderHistory = () => {
     const fetchOrderHistory = async () => {
       try {
         console.log('Fetching order history for user:', user);
-        const response = await axios.get('https://bookbazaar-3ben.onrender.com/api/orders', {
+        const response = await axios.get('https://bookmart-d7it.onrender.com/api/orders', {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },

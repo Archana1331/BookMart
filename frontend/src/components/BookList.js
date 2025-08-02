@@ -24,7 +24,7 @@ const BookList = () => {
   const fetchBooks = async () => {
     try {
       const params = new URLSearchParams(location.search);
-      let url = 'https://bookbazaar-3ben.onrender.com/api/books';
+      let url = 'https://bookmart-d7it.onrender.com/api/books';
 
       if (params.toString()) {
         url += '?' + params.toString();

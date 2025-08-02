@@ -23,7 +23,7 @@ const AddBookForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://bookbazaar-3ben.onrender.com/api/books', formData, {
+      await axios.post('https://bookmart-d7it.onrender.com/api/books', formData, {
         headers: {
           Authorization: `Bearer ${JSON.parse(localStorage.getItem('user')).token}`,
         },

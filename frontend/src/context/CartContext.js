@@ -9,7 +9,7 @@ export const CartProvider = ({ children }) => {
   // Fetch the user's cart from the backend
   const fetchCart = async () => {
     try {
-      const response = await axios.get('https://bookbazaar-3ben.onrender.com/api/cart', {
+      const response = await axios.get('https://bookmart-d7it.onrender.com/api/cart', {
         headers: {
           Authorization: `Bearer ${JSON.parse(localStorage.getItem('user')).token}`,
         },
@@ -24,7 +24,7 @@ export const CartProvider = ({ children }) => {
   const addToCart = async (bookId, quantity = 1) => {
     try {
       const response = await axios.post(
-        'https://bookbazaar-3ben.onrender.com/api/cart/add',
+        'https://bookmart-d7it.onrender.com/api/cart/add',
         { bookId, quantity },
         {
           headers: {
@@ -36,7 +36,7 @@ export const CartProvider = ({ children }) => {
 
       // Reduce the book quantity in the backend
       await axios.put(
-        `https://bookbazaar-3ben.onrender.com/api/books/${bookId}/reduce-quantity`,
+        `https://bookmart-d7it.onrender.com/api/books/${bookId}/reduce-quantity`,
         { quantity: 1 }, // Reduce quantity by 1
         {
           headers: {
@@ -57,7 +57,7 @@ export const CartProvider = ({ children }) => {
       console.log('Removing book from cart. Book ID:', bookIdString);
   
       await axios.post(
-        'https://bookbazaar-3ben.onrender.com/api/cart/remove',
+        'https://bookmart-d7it.onrender.com/api/cart/remove',
         { bookId: bookIdString },
         {
           headers: {
@@ -70,7 +70,7 @@ export const CartProvider = ({ children }) => {
       // Increment the book quantity in the backend
       console.log('Incrementing quantity for book ID:', bookIdString);
       await axios.put(
-        `https://bookbazaar-3ben.onrender.com/api/books/${bookIdString}/increment-quantity`,
+        `https://bookmart-d7it.onrender.com/api/books/${bookIdString}/increment-quantity`,
         { quantity: 1 }, // Increment quantity by 1
         {
           headers: {
@@ -122,7 +122,7 @@ const clearCart = async () => {
   
       // Clear the cart in the backend
       await axios.post(
-        'https://bookbazaar-3ben.onrender.com/api/cart/clear',
+        'https://bookmart-d7it.onrender.com/api/cart/clear',
         {},
         {
           headers: {
