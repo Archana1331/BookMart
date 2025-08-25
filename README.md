@@ -1,6 +1,6 @@
 # 📚 BookMart
 
-**BookBazaar** is a MERN stack web application that allows users to explore, buy, and manage their favorite books with ease.
+**BookMart** is a MERN stack web application that allows users to explore, buy, and manage their favorite books with ease.
 
 ## 🚀 Features
 
